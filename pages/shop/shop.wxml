@@ -1,0 +1,74 @@
+<!--index.wxml-->
+<view class="index-body" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+  <view class="view-title">
+    <text class="index-title">Result</text>
+    <view class="view-title-btn" bindtap='addDataButton'>
+      <image class='slip-icon' src='../../image/slip.png'></image>
+    </view>
+  </view>
+
+  <view class="view-top">
+    <view class="view-kpi">
+    KPI
+    </view>
+    <view class="view-shop">
+    中国科学院大学西苑超市
+    </view>
+    <view class="view-score">
+    优秀 A+
+    </view>
+  </view>
+  <view class="view-text">
+     数据同步至2019.8.10 24时
+  </view>
+  <view class="view-middle">
+ 
+   
+
+    <view class="view-middle-1 view-middle-bottom">
+      <view class="result-icon">
+        <image class='image-icon' src='../../image/commodity.png'></image>
+      </view>
+      <view class='result-text'>
+        货架商品数
+      </view>
+      <view class='result-number'>
+        100
+      </view>
+      </view>
+    <view class="view-middle-2 view-middle-bottom">
+      <view class="result-icon">
+        <image class='image-icon' src='../../image/statistics.png'></image>
+      </view>
+      <view class='result-text'>
+        客流量
+      </view>
+      <view class='result-number'>
+        50
+      </view>
+    </view>
+    <view class="view-middle-3 view-middle-bottom">
+      <view class="result-icon">
+        <image class='image-icon' src='../../image/proportion.png'></image>
+      </view>
+      <view class='result-text'>
+        货物占比
+      </view>
+      <view class='result-number'>
+        80%
+      </view>
+    </view>
+    <view class="view-middle-4 view-middle-bottom">
+    <view class="result-icon">
+        <image class='image-icon' src='../../image/contrast.png'></image>
+      </view>
+      <view class='result-text'>
+        缺货时间比
+      </view>
+      <view class='result-number'>
+        40%
+      </view>
+    </view>
+  </view>
+   
+</view>

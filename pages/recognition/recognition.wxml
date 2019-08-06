@@ -1,0 +1,104 @@
+<!--index.wxml-->
+<view class="index-body">
+  <view class="view-title">
+    <text class="index-title">Adding Data</text>
+    <view class="view-title-btn" bindtap='backButton'>
+      <image class='slip-icon' src='../../image/slipLeft.png'></image>
+    </view>
+  </view>
+
+  <view class="view-top">
+    中国科学院大学西苑超市
+  </view>
+  <view class="view-middle">
+    <view class="view-middle-top" bindtap='chooseImage'>
+      <image src="{{ img_url }}" mode='aspectFit' class='commodity-photo'/>
+      <image class='camera' src='../../image/image.png'></image>
+    </view>
+ 
+    <view class="view-middle-bottom">
+      <view class='result-text1'>
+        货架节数：
+      </view>
+       <view class='result-text1-parameter'>
+        4
+      </view>
+      
+       <view class='result-text2-parameter'>
+        是
+      </view>
+      <view class='result-text2'>
+        是否存在促销：
+      </view>
+      </view>
+  </view>
+  <view class="view-bottom">
+<view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">汇总</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">层数1</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">层数2</view>
+</view>
+
+<swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+    <swiper-item >
+      <view class="swiper-view">
+       总商品数：100
+      </view>
+     <view class="swiper-view">总缺货率：0.25</view>
+     <view class="swiper-view">惠氏产品占比：0.33</view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper-view">
+        <view class="swiper-view-name">
+         商品名称
+        </view>
+         <view class="swiper-view-position">
+         位置信息
+        </view>
+      </view>
+      <view class="swiper-view">
+        <view class="swiper-view-name">
+         惠氏-竞品-盒装
+        </view>
+         <view class="swiper-view-position">
+         0,1,2,3
+        </view>
+      </view>
+      <view class="swiper-view">
+        <view class="swiper-view-name">
+         惠氏-竞品-罐装
+        </view>
+         <view class="swiper-view-position">
+         4,5,6,7
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper-view">
+        <view class="swiper-view-name">
+         商品名称
+        </view>
+         <view class="swiper-view-position">
+         位置信息
+        </view>
+      </view>
+      <view class="swiper-view">
+        <view class="swiper-view-name">
+         惠氏-竞品-盒装
+        </view>
+         <view class="swiper-view-position">
+         0,1,2,3
+        </view>
+      </view>
+      <view class="swiper-view">
+        <view class="swiper-view-name">
+         惠氏-竞品-罐装
+        </view>
+         <view class="swiper-view-position">
+         4,5,6,7
+        </view>
+      </view>
+    </swiper-item>
+</swiper>
+  </view>
+</view>

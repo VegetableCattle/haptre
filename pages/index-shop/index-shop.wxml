@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="index-body">
+  <view class="view-title">
+    <text class="index-title">Find</text>
+  </view>
+  <view class="btn-container">
+    <view class="view-shop">
+    <button class='btn-shop'>商店</button>
+    </view>
+    <view class="view-commodity">
+    <button bindtap='commodityButton' class='btn-commodity' hover-class='btn-hover'>商品</button>
+    </view>
+  </view>
+  <view class="view-middle">
+    <view class="view-middle-top">
+      <view class="view-middle-left">
+        <picker name="picker_hx" class="cybm_pic_1" value="{{pic_array[hx_index].id}}" data-selecthx="{{pic_array[hx_index].name}}" range="{{pic_array}}" range-key="{{'name'}}"  bindchange="bindPickerChange_hx"  >
+        <view class="picker" >
+         {{pic_array[hx_index].name}} 
+        </view>
+        </picker>
+      </view>
+      <view class="view-middle-right">
+        <picker name="picker_dq" class="cybm_pic_1" value="{{dq_array[dq_index].id}}" data-selecthx="{{dq_array[dq_index].name}}" range="{{dq_array}}" range-key="{{'name'}}"  bindchange="bindPickerChange_dq"  >
+        <view class="picker" >
+         {{dq_array[dq_index].name}} 
+        </view>
+        </picker>
+      </view>
+    </view>
+   
+
+    <view class="view-middle-bottom">
+    <picker name="picker_shop" class="cybm_pic_1" value="{{shop_array[shop_index].id}}" data-selecthx="{{shop_array[shop_index].name}}" range="{{shop_array}}" range-key="{{'name'}}"  bindchange="bindPickerChange_shop"  >
+        <view class="picker" >
+         {{shop_array[shop_index].name}} 
+        </view>
+        </picker>
+    </view>
+   <!-- <picker name="picker_hx" class="cybm_pic_1" value="{{pic_array[hx_index].id}}" data-selecthx="{{pic_array[hx_index].name}}" range="{{pic_array}}" range-key="{{'name'}}"  bindchange="bindPickerChange_hx"  >
+        <view class="picker" >
+         {{pic_array[hx_index].name}} 
+        </view>
+      </picker> -->
+  </view>
+   <view class="view-bottom">
+        <button class='btn-bottom' bindtap='confirmButton' hover-class='btn-bottom-hover' disabled="{{bottomHidden}}">确  认</button>
+    </view>
+</view>

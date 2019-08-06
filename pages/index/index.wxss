@@ -1,0 +1,20 @@
+
+.index-body{
+  margin-top: 7%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+  width: 100%;
+}
+
+.view-logo{
+  position:fixed; 
+  top: 15%;
+  left: 13%;
+  /* width: 400rpx; */
+  display: flex;
+}
+.logo-icon{
+  width: 550rpx;
+  height: 501rpx;
+}

@@ -1,0 +1,66 @@
+<!--index.wxml-->
+<view class="index-body">
+  <view class="view-title">
+    <text class="index-title">Find</text>
+  </view>
+  <view class="btn-container">
+    <view class="view-shop">
+    <button class='btn-shop' bindtap='shopButton' hover-class='btn-hover'>商店</button>
+    </view>
+    <view class="view-commodity">
+    <button class='btn-commodity' >商品</button>
+    </view>
+  </view>
+  <view class="view-middle">
+  <view class="view-middle-top">
+  </view>
+    <view class="view-middle-bottom">
+      <view class="view-middle-text">
+        <view class="view-middle-text-constant">
+          名称：
+        </view>
+         <view class="view-middle-text-variable">
+         {{commodityName}}
+         </view>
+         <view class="view-middle-text-clear">
+        
+          </view>
+      </view>
+      <view class="view-middle-text">
+        <view class="view-middle-text-constant">
+          产地：
+       </view>
+       <view class="view-middle-text-variable">
+        {{commodityplace}}
+       </view>
+       <view class="view-middle-text-clear">
+        
+       </view>
+      </view>
+      <view class="view-middle-text">
+        <view class="view-middle-text-constant">
+          适龄：
+       </view>
+       <view class="view-middle-text-variable">
+        {{commoditySuitAge}}
+       </view>
+       <view class="view-middle-text-clear">
+        
+       </view>
+      </view>
+    </view>
+  </view>
+   <view class="view-bottom">
+   <view class="view-bottom-top">
+  </view>
+    <view class="view-bottom-text">
+      在售超市：
+    </view>
+    <view class="view-bottom-text">
+      怀柔区
+    </view>
+        <button class='btn-bottom' bindtap='confirmButton' hover-class='btn-bottom-hover'>中国科学院大学西苑超市</button>
+        <button class='btn-bottom' bindtap='' hover-class='btn-bottom-hover'>世纪家家福超市怀柔店</button>
+        <button class='btn-bottom' bindtap='' hover-class='btn-bottom-hover'>多点超市怀柔万达店</button>
+    </view>
+</view>

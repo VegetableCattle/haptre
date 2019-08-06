@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="index-body">
+  <view class="view-logo">
+    <image class='logo-icon' src='../../image/logo.png'></image>
+  </view>
+</view>

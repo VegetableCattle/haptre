@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="index-body">
+  <view class="view-title">
+    <text class="index-title">Find</text>
+  </view>
+  <view class="btn-container">
+    <view class="view-shop">
+    <button class='btn-shop' bindtap='shopButton' hover-class='btn-hover'>商店</button>
+    </view>
+    <view class="view-commodity">
+    <button class='btn-commodity' >商品</button>
+    </view>
+  </view>
+  <view class="view-middle" bindtap='chooseImage'>
+    <view class="view-middle-bottom">
+    <image src="{{ img_url }}" mode='aspectFit' class='commodity-photo'/>
+    <image class='camera' src='../../image/image.png'></image>
+    </view>
+  </view>
+   <view class="view-bottom">
+        <button class='btn-bottom' bindtap='resultButton' hover-class='btn-bottom-hover' disabled="{{btnDisabled}}">搜索</button>
+    </view>
+</view>

@@ -1,0 +1,153 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.index-body{
+  margin-top: 7%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+}
+.index-title {
+  margin-top: 400rpx;
+  font-weight:900;
+  font-size:80rpx;
+  font-family: 微软雅黑;
+  color: rgb(100, 99, 99);
+  margin-left: 9%;
+}
+
+.btn-container {
+   width: 400rpx;
+   height: 90rpx;
+   display: flex;
+   justify-content: center;
+   margin-left: 7%;
+   margin-top: 20rpx;
+}
+.btn-container view {
+  width: 200rpx;
+}
+
+.btn-shop {
+  /* margin-left: 20px; */
+  background-color: rgba(241, 240, 240, 1);
+  color: rgba(120, 166, 210, 1);
+  border-top-left-radius: 100rpx;
+  border-bottom-left-radius: 100rpx;
+  background: linear-gradient(-65deg, transparent 40rpx, rgba(241, 240, 240, 1) 0);
+  outline: none;
+  z-index: 100;
+  line-height:90rpx;
+  height: 90rpx;
+  width: 280rpx;
+  font-size: 40rpx;
+}
+
+.btn-hover {
+  background-color: rgba(120, 166, 210, 1);
+  color: #FFF;
+  border-top-left-radius: 100rpx;
+  border-bottom-left-radius: 100rpx;
+  background: linear-gradient(-65deg, transparent 40rpx, rgba(120, 166, 210, 1) 0);
+  outline: none;
+   border: none;
+} 
+
+.btn-shop::after {
+  border: none;
+}
+.btn-commodity::after {
+  border: none;
+}
+.btn-commodity {
+  background-color: rgba(120, 166, 210, 1);
+  color: #FFF;
+  margin-top: 3rpx;
+  
+  border-top-right-radius: 100rpx;
+  border-bottom-right-radius: 100rpx;
+  background: linear-gradient(115deg, transparent 40rpx, rgba(120, 166, 210, 1) 0);
+  margin-left: 40rpx;
+  border: none;
+  outline: none;
+  line-height:90rpx;
+  height: 90rpx;
+  width: 280rpx;
+  font-size: 40rpx;
+}
+
+
+.view-bottom{
+  position:fixed; 
+  bottom:20%; 
+  width: 400rpx;
+  display: flex;
+  justify-content: center;
+  margin-left: 14%;
+  margin-top: 20rpx;
+}
+.btn-bottom::after {
+  border: none;
+}
+.btn-bottom {
+  background-color: rgba(120, 166, 210, 1);
+  color: #FFF;
+  margin-top: 30rpx;
+  font-size:44rpx;
+  border: 0;
+  line-height:96rpx;
+  height: 96rpx;
+  width: 540rpx;
+  border-radius: 100rpx;
+}
+.btn-bottom-hover {
+  background-color: rgba(241, 240, 240, 1);
+  color: rgba(120, 166, 210, 1);
+}
+.view-middle{
+  margin-top: 15%;
+  margin-left: 1%;
+  font-size: 44rpx;
+  color: rgba(110, 106, 106, 1);
+}
+.view-middle-bottom{
+  margin-left: 7%;
+  margin-top: 4%;
+  border-color: rgba(202, 199, 199, 1);
+  border-style: solid;
+  /* text-align:center; */
+  width: 500rpx;
+  height: 400rpx;
+  /* line-height: 60px; */
+  position:relative;
+  /* background-color: rgba(241, 240, 240, 1); */
+}
+.camera{
+ height: 300rpx;
+  width: 300rpx;
+  vertical-align: middle;
+  margin-top: 50rpx;
+  margin-left:20%;
+  position:absolute;
+}
+
+.commodity-photo{
+  z-index: 100;
+  position:absolute;
+  height: 100%;
+  width: 100%;
+}
