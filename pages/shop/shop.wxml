@@ -2,9 +2,9 @@
 <view class="index-body" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
   <view class="view-title">
     <text class="index-title">Result</text>
-    <view class="view-title-btn" bindtap='addDataButton'>
+    <!-- <view class="view-title-btn" bindtap='addDataButton'>
       <image class='slip-icon' src='../../image/slip.png'></image>
-    </view>
+    </view> -->
   </view>
 
   <view class="view-top">
@@ -70,5 +70,7 @@
       </view>
     </view>
   </view>
-   
+  <view class="view-bottom-bar" bindtap='addDataButton'>
+
+  </view>
 </view>

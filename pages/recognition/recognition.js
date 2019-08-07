@@ -18,6 +18,13 @@ Page({
     commodityProportionTotal: null,
     commodityShortage:null,
     isPromotion:'否',
+    commodityEach:null,
+    layerNum:0,
+    layerNowNum:1,
+    viewDisplay:"none",
+    layerInformation: "",
+
+
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
@@ -58,6 +65,10 @@ Page({
           img_url: res.tempFilePaths[0],
           tempFilePaths: res.tempFilePaths
         })
+        wx.showLoading({
+          title: "努力分析中...",
+          mask: true
+        })
         var fs = wx.getFileSystemManager();
         fs.readFile({
           filePath: res.tempFilePaths[0].toString(),
@@ -68,7 +79,8 @@ Page({
               btnDisabled: false
             })
             wx.request({
-              url: 'http://127.0.0.1:8761/addData',
+              url: 'https://lengxia1994.cn/addData',
+              // url: 'http://106.75.34.228:82/infer-ceddd140-91b0-435a-9a33-42dfce97147a/addData',
               data: {
                 base64Img: that.data.base64Img
               },
@@ -79,54 +91,48 @@ Page({
               success: function (res) {
                 console.log(res.data)//打印到控制台
                 var isRemake = res.data["是否翻拍"];
-                var isPeople = res.data["行人"];
-                var promotion = res.data['是否促销'];
-                if (promotion!=0){
-                  that.setData({
-                    isPromotion: '是',
-                    })
-                }
+                var isPeople = res.data["行人个数"];
                 if (isRemake == true){
+                  that.setData({
+                    viewDisplay: "none"
+                  })
                   wx.hideLoading();
                   wx.showModal({
                     showCancel: false,
                     title: '警告',
                     content: '检测出翻拍，请重新拍摄'
                   })
+                  
                 }
-                else if (isPeople!=0){
+                else if (isPeople!=null&isPeople!=0){
+                  that.setData({
+                    viewDisplay: "none"
+                  })
                   wx.hideLoading();
                   wx.showModal({
                     showCancel: false,
                     title: '温馨提示',
                     content: '有行人经过，请重新拍摄'
                   })
+                 
                 }
                 else{
+                  wx.hideLoading();
+                  var promotion = res.data['是否促销'];
+                  if (promotion!=null&promotion != 0) {
+                    that.setData({
+                      isPromotion: '是',
+                    })
+                  }
                   that.setData({
-                    isPromotion: res.data['是否促销'],
                     commodityQuantityTotal: res.data['总商品数'],
                     commodityProportionTotal: res.data['惠氏产品占比'],
                     commodityShortage: res.data['总缺货率'],
+                    commodityEach: res.data['各种类产品个数及比例'],
+                    layerInformation: res.data['排面信息'],
+                    layerNum: res.data['排面信息'].length,
+                    viewDisplay:"",
                   })
-                }
-                var suitAge = res.data["适龄"];
-                var place = res.data["产地"];
-                if (name == null || suitAge == null) {
-                  var toastText = '数据获取失败';
-                  wx.showToast({
-                    title: toastText,
-                    icon: '',
-                    duration: 2000
-                  });
-                }
-                else {
-                  that.setData({
-                    commodityName: name,
-                    commoditySuitAge: suitAge,
-                    commodityplace: place
-                  })
-                  console.log(that.data.commodityName)
                 }
                }
               })
