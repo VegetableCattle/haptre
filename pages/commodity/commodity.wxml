@@ -64,6 +64,6 @@
         <button class='btn-bottom' bindtap='' hover-class='btn-bottom-hover'>多点超市怀柔万达店</button>
     </view>
     <view class="view-tips">
-    
+        
     </view>
 </view>

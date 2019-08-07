@@ -2,9 +2,9 @@
 <view class="index-body">
   <view class="view-title">
     <text class="index-title">Adding Data</text>
-    <view class="view-title-btn" bindtap='backButton'>
+    <!-- <view class="view-title-btn" bindtap='backButton'>
       <image class='slip-icon' src='../../image/slipLeft.png'></image>
-    </view>
+    </view> -->
   </view>
 
   <view class="view-top">
@@ -98,5 +98,8 @@
     </swiper-item>
 
 </swiper>
+  </view>
+  <view class="view-bottom-bar" bindtap='backButton'>
+  
   </view>
 </view>
