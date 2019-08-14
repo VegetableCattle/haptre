@@ -12,14 +12,14 @@
     KPI
     </view>
     <view class="view-shop">
-    中国科学院大学西苑超市
+    家乐福中关村广场店
     </view>
     <view class="view-score">
     优秀 A+
     </view>
   </view>
   <view class="view-text">
-     数据同步至2019.8.10 24时
+     数据同步至{{yesterday}} 24时
   </view>
   <view class="view-middle">
  
@@ -70,7 +70,8 @@
       </view>
     </view>
   </view>
-  <view class="view-bottom-bar" bindtap='addDataButton'>
-
+  <view class="view-bottom-bar-left">
+  </view>
+  <view class="view-bottom-bar-right" bindtap='addDataButton'>
   </view>
 </view>

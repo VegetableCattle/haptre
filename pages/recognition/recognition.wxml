@@ -8,7 +8,7 @@
   </view>
 
   <view class="view-top">
-    中国科学院大学西苑超市
+    家乐福中关村广场店
   </view>
   <view class="view-middle">
     <view class="view-middle-top" bindtap='chooseImage'>
@@ -43,7 +43,7 @@
 </view> -->
 
 <swiper duration="300"  bindchange="swiperTab">
-    <swiper-item >
+    <swiper-item>
       <view class="swiper-view-title">
        汇总
       </view>
@@ -99,7 +99,8 @@
 
 </swiper>
   </view>
-  <view class="view-bottom-bar" bindtap='backButton'>
-  
+   <view class="view-bottom-bar-left" bindtap='backButton'>
+  </view>
+  <view class="view-bottom-bar-right" >
   </view>
 </view>

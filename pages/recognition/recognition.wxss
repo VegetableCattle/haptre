@@ -24,7 +24,7 @@
 .index-title {
   margin-top: 200px;
   font-weight:900;
-  font-size:80rpx;
+  font-size:70rpx;
   font-family: 微软雅黑;
   color: rgb(100, 99, 99);
   margin-left: 9%;
@@ -242,7 +242,7 @@ swiper{
   border-bottom: 4rpx solid rgba(120, 166, 210, 1);
 }
 
-.view-bottom-bar{
+/* .view-bottom-bar{
   background: rgba(219, 227, 250) linear-gradient(to right, rgba(0,255,0,0), rgb(120, 166, 210, 1));
   position:fixed; 
   bottom: 2%;
@@ -252,4 +252,24 @@ width: 73%;
 height: 25rpx;
 margin-left: 10%;
 border-radius: 100rpx;
+} */
+.view-bottom-bar-left{
+background: rgba(241, 240, 240, 1);
+position:fixed; 
+bottom: 2%;
+display: flex;
+z-index: 20;
+width: 38%;
+height: 25rpx;
+margin-left: 10%;
+}
+.view-bottom-bar-right{
+background:  rgba(120, 166, 210, 1);
+position:fixed; 
+bottom: 2%;
+display: flex;
+z-index: 21;
+width: 36%;
+height: 25rpx;
+left: 52%;
 }

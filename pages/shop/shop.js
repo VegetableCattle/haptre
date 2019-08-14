@@ -1,9 +1,18 @@
 var touchDot = 0;//触摸时的原点 
 var time = 0;// 时间记录，用于滑动时且时间小于1s则执行左右滑动 
 var interval = "";// 记录/清理时间记录 
+var util=require('../../utils/util.js');
 Page({
   data: {
-    
+    yesterday:null,
+  },
+  
+  onLoad: function (options) {
+    var DAY = util.formatDay(new Date());
+    this.setData({
+      yesterday: DAY
+    })
+   
   },
   // 触摸开始事件 
   touchStart: function (e) {

@@ -13,8 +13,8 @@ Page({
     ],
     hx_index: 0,
     dq_array: [
-      { id: 17, name: '怀柔区' },
-      { id: 18, name: '海淀区' },
+      { id: 17, name: '海淀区' },
+      { id: 18, name: '怀柔区' },
       { id: 19, name: '朝阳区' },
       { id: 20, name: '昌平区' },
       { id: 21, name: '丰台区' },
@@ -22,10 +22,15 @@ Page({
       { id: 23, name: '西城区' },
       ],
     dq_index: 0,
+    // shop_array: [
+    //   { id: 24, name: '中国科学院大学西苑超市' },
+    //   { id: 25, name: '世纪家家福超市怀柔店' },
+    //   { id: 26, name: '多点超市怀柔万达店' },
+    // ],
     shop_array: [
-      { id: 24, name: '中国科学院大学西苑超市' },
-      { id: 25, name: '世纪家家福超市怀柔店' },
-      { id: 26, name: '多点超市怀柔万达店' },
+      { id: 24, name: '家乐福中关村广场店' },
+      { id: 25, name: '华联万柳购物中心' },
+      { id: 26, name: '沃尔玛购物广场知春路店' },
     ],
     shop_index: 0,
   },
@@ -46,9 +51,9 @@ Page({
     if (e.detail.value==0&dq_flag==0){
       this.setData({   //给变量赋值
         shop_array: [
-          { id: 24, name: '中国科学院大学西苑超市' },
-          { id: 25, name: '世纪家家福超市怀柔店' },
-          { id: 26, name: '多点超市怀柔万达店' },
+          { id: 24, name: '家乐福中关村广场店' },
+          { id: 25, name: '华联万柳购物中心' },
+          { id: 26, name: '沃尔玛购物广场知春路店' },
         ]
       })
     }
@@ -139,9 +144,9 @@ Page({
       this.setData({   //给变量赋值
         dq_index: e.detail.value,
         shop_array: [
-          { id: 24, name: '中国科学院大学西苑超市' },
-          { id: 25, name: '世纪家家福超市怀柔店' },
-          { id: 26, name: '多点超市怀柔万达店' },
+          { id: 24, name: '家乐福中关村广场店' },
+          { id: 25, name: '华联万柳购物中心' },
+          { id: 26, name: '沃尔玛购物广场知春路店' },
         ]
       })
     }

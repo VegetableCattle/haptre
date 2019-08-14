@@ -115,7 +115,7 @@
   vertical-align: middle;
 }
 
-.view-bottom-bar{
+/* .view-bottom-bar{
   background: rgba(120, 166, 210, 1) linear-gradient(to right, rgba(0,255,0,0), rgb(219, 227, 250));
   position:fixed; 
   bottom: 2%;
@@ -125,4 +125,25 @@ width: 73%;
 height: 25rpx;
 margin-left: 10%;
 border-radius: 100rpx;
+} */
+
+.view-bottom-bar-left{
+background: rgba(120, 166, 210, 1);
+position:fixed; 
+bottom: 2%;
+display: flex;
+z-index: 20;
+width: 38%;
+height: 25rpx;
+margin-left: 10%;
+}
+.view-bottom-bar-right{
+background:  rgba(241, 240, 240, 1);
+position:fixed; 
+bottom: 2%;
+display: flex;
+z-index: 21;
+width: 36%;
+height: 25rpx;
+left: 52%;
 }

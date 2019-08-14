@@ -57,11 +57,11 @@
       在售超市：
     </view>
     <view class="view-bottom-text">
-      怀柔区
+      海淀区
     </view>
-        <button class='btn-bottom' bindtap='confirmButton' hover-class='btn-bottom-hover'>中国科学院大学西苑超市</button>
-        <button class='btn-bottom' bindtap='' hover-class='btn-bottom-hover'>世纪家家福超市怀柔店</button>
-        <button class='btn-bottom' bindtap='' hover-class='btn-bottom-hover'>多点超市怀柔万达店</button>
+        <button class='btn-bottom' bindtap='confirmButton' hover-class='btn-bottom-hover'>家乐福中关村广场店</button>
+        <button class='btn-bottom' bindtap='' hover-class='btn-bottom-hover'>华联万柳购物中心</button>
+        <button class='btn-bottom' bindtap='' hover-class='btn-bottom-hover'>沃尔玛购物广场知春路店</button>
     </view>
     <view class="view-tips">
         
